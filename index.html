@@ -2,16 +2,29 @@
 <head>
 	<title>Mi Blog</title>
 	<style media="screen">
-		body{
-			margin:0;
+	body {
+      margin:  0;
+			border: 10px solid red;
     }
-		img {
-			max-width: 100%;
-			vertical-align: top;
-		}
+  img	{
+    max-width: 100%;
+    vertical-align: top;
+	}
+	img#responsive{
+  	display: none;
+	}
+	@media screen and (max-width: 768px) {
+ 		img#responsive {
+	  	display: block;
+	   }
+		 img{
+ 	  	display: none;
+ 	   }
+  }
 	</style>
 </head>
 <body>
-  <img src="images/nueva-version.jpg" alt="nueva-version">
+	<img src="images/invie-responsive.png" alt="invie-responsive" id="responsive">
+	<img src="images/nueva-version.jpg" alt="nueva-version">
 </body>
 </html>
